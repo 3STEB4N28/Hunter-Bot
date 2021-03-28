@@ -5,9 +5,9 @@ const Statcord = require("statcord.js");
 const statcord = new Statcord.Client({
     client,
     key:config.statkey,
-    postCpuStatistics: true, /* Whether to post memory statistics or not, defaults to true */
-    postMemStatistics: true, /* Whether to post memory statistics or not, defaults to true */
-    postNetworkStatistics: true, /* Whether to post memory statistics or not, defaults to true */
+    postCpuStatistics: true,
+    postMemStatistics: true,
+    postNetworkStatistics: true,
 });
 const dbd = require("dbd.js");
 const bot = new dbd.Bot({
@@ -18,15 +18,33 @@ const bot = new dbd.Bot({
     token: config.token, 
     prefix: ['$getServerVar[prefix]', '<@755094850113896639>', '<@!755094850113896639>']
 });
+const DBL = require("dblapi.js");
+const dbl = new DBL(config.topggkey);
 
-const dbdExpress = require("dbd.express");
-const Dashboard = new dbdExpress(bot);
-Dashboard.API({
-    port:4458,
-    useSecureProtocol:true,
-    authorizationKey:"Bearer root@1234"
+dbl.on('posted', () => {
+    console.log('Server count posted!');
 });
-Dashboard.createUI();
+
+dbl.on('error', () => {
+    console.log("Oops! ${e}");
+});
+
+client.on('ready', () => {
+    setInterval(() => {
+        
+        dbl.postStats(client.guilds.cache.size);
+        console.log("Current djs servers " + client.guilds.cache.size);
+    }, 240000);
+    statcord.autopost();
+});
+    statcord.on("autopost-start", () => {
+    // Emitted when statcord autopost starts
+    console.log("Started autopost"); 
+});
+statcord.on("post", status => {
+    if (!status) console.log("Successful post");
+    else console.error(status);
+});
 
 //Callbacks, command handler and some commands
 
@@ -214,35 +232,5 @@ bot.status({
     text: "Expected Downtime!",
     type: "PLAYING",
     time: 15
-});
-
-const DBL = require("dblapi.js");
-const dbl = new DBL(config.topggkey);
-
-dbl.on('posted', () => {
-    console.log('Server count posted!');
-});
-
-dbl.on('error', () => {
-    console.log("Oops! ${e}");
-});
-
-client.on('ready', () => {
-    setInterval(() => {
-        
-        dbl.postStats(client.guilds.cache.size);
-        console.log("Current djs servers " + client.guilds.cache.size);
-    }, 240000);
-    statcord.autopost();
-});
-    statcord.on("autopost-start", () => {
-    // Emitted when statcord autopost starts
-    console.log("Started autopost"); 
-});
-statcord.on("post", status => {
-    // status = false if the post was successful
-    // status = "Error message" or status = Error if there was an error
-    if (!status) console.log("Successful post");
-    else console.error(status);
 });
 client.login(config.token)
