@@ -33,7 +33,7 @@ client.on('ready', () => {
     setInterval(() => {
         
         dbl.postStats(client.guilds.cache.size);
-        console.log("Current djs servers " + client.guilds.cache.size);
+        console.log("Current servers " + client.guilds.cache.size);
     }, 240000);
     statcord.autopost();
 });
@@ -46,16 +46,6 @@ statcord.on("post", status => {
 });
 
 bot.loadCommands("./commands/");
-
-/*bot.readyCommand({
-    channel: "802775876420894780",
-    code: `$description[Bot online!
-    Ping: $ping MS
-    Servers: $numberSeparator[$serverCount]
-    Users: $numberSeparator[$allMembersCount]
-    ]
-    $color[BLACK]`
-});*/
 
 bot.variables({
     prefix: "h!",
