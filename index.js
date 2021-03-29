@@ -49,7 +49,7 @@ bot.loadCommands("./commands/");
 
 bot.variables({
     prefix: "h!",
-    myid: "701292425624420362",
+    myid:config.authorid,
     moderation: "on",
     economy: "on",
     fun: "on",
