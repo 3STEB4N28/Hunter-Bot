@@ -1,6 +1,7 @@
 {
   "token": "bot-token-here",
   "statkey": "your-statcord.com-key-here",
-  "topggkey": "your-top.gg-key-here"
+  "topggkey": "your-top.gg-key-here",
+  "authorid": "your-discord-user-id-here"
 }
   
