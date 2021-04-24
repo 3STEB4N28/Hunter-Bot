@@ -1,10 +1,12 @@
 module.exports = [{
     name: "$alwaysExecute",
     code: `$if[$checkContains[$toLowercase[$day[yes]];saturday;sunday;friday]==true]
+$setGlobalUserVar[Money;$sum[300;$getGlobalUseVar[Money;$get[user]]];$get[user]]
 $sendDM[$get[user];**Thanks for voting at $get[list2]**!
 
 You have received **300**$getVar[ecosign] for voting!]
 $elseif[$checkContains[$toLowercase[$day[yes]];saturday;sunday;friday]==false]
+$setGlobalUserVar[Money;$sum[150;$getGlobalUseVar[Money;$get[user]]];$get[user]]
 $sendDM[$get[user];**Thanks for voting at $get[list2]**!
 
 You have received **150**$getVar[ecosign] for voting!]
