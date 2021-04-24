@@ -15,6 +15,6 @@ $let[list2;$replaceText[$replaceText[$replaceText[$replaceText[$replaceText[$rep
 $let[list;$messageSlice[1]]
 $let[user;$message[1]]
 $onlyIf[$authorID!=$clientID;]
-$onlyForChannels[832878919018741760;]`,
+$onlyForChannels[the-private-webhook-channel-id-here;]`,
 nonPrefixed: true
 }]
