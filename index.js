@@ -11,13 +11,11 @@ const statcord = new Statcord.Client({
 });
 const dbd = require("dbd.js-lite");
 const bot = new dbd.Bot({
-    fetchInvites: true,
-    sharding: false,
-    shardAmount: 2,
-    mobile: true,
+	sharding: false,
+	shardAmount: 2,
+	mobile: true,
 	token: config.token,
 	prefix: [config.prefix1, config.prefix2, config.prefix3],
-    autoUpdate: true
 });
 const app = require("express")();
 const bodyParser = require("body-parser");
