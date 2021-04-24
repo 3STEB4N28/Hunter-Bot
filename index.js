@@ -25,6 +25,7 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.json());
 
 app.post("/votes", function (request, response) {
+	//https://discord.com/api/webhooks/id/token
     const webhook1 = new Discord.WebhookClient("public-webhook-id", "public-webhook-token");
     const webhook2 = new Discord.WebhookClient("private-webhook-id","private-webhook-token"); 
     let auth = request.headers.authorization
@@ -236,8 +237,6 @@ bot.onLeave();
 
 
 bot.loadCommands("./commands/");
-
-//https://discord.com/api/webhooks/830868134210306079/oE2BqaooBJ_PAb3A3NgLcZExRQK4-kEmJoL1LadDeZ-HlxSOVKqro9WmAe8BSHsfXt5l
 
 bot.variables({
 	prefix: "h!",
