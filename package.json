@@ -1,6 +1,6 @@
 {
-  "name": "Hunter-Bot-Beta",
-  "version": "1.0.0",
+  "name": "Hunter-Bot",
+  "version": "4.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
