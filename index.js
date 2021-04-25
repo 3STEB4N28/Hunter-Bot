@@ -2,13 +2,13 @@ const config = require("./config")
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const Statcord = require("statcord.js");
-const statcord = new Statcord.Client({
+/*const statcord = new Statcord.Client({
     client,
     key: config.statkey,
     postCpuStatistics: true,
     postMemStatistics: true,
     postNetworkStatistics: true,
-});
+});*/
 const dbd = require("dbd.js-lite");
 const bot = new dbd.Bot({
 	sharding: false,
@@ -17,6 +17,8 @@ const bot = new dbd.Bot({
 	token: config.token,
 	prefix: [config.prefix1, config.prefix2, config.prefix3],
 });
+
+/*
 const app = require("express")();
 const bodyParser = require("body-parser");
 
@@ -180,10 +182,11 @@ This helps me grow and get more user's to know me!`)
 
 app.listen(2000, () => {
     console.log("Website + Webhook is up and running");
-});
+});*/
 
 let id = "your-bots-client-id-here"
 
+/*
 client.on('ready', () => {
     statcord.autopost();
     const blapi = require("blapi");
@@ -221,7 +224,7 @@ blapi.setLogging({
 statcord.on("post", status => {
     if (!status) console.log("Successful post");
     else console.error(status);
-});
+});*/
 
 bot.onMessage({
 	respondToBots: true
