@@ -13,6 +13,6 @@ You can change the sentences to what ever you want, or you can also edit the com
 
 # Giving Creadits
 
-> In order for you to use this repository, you must give credits to **[3STEB4N28](https://discord.com/users/701292425624420362)**, meaning mentioning myself in a command, or leave a link to the [support server](https://hunterbot.tk/support) of **Hunter Bot**, even if you modified every command you must give me credit!
+ In order for you to use this repository, you must give credits to **[3STEB4N28](https://discord.com/users/701292425624420362)**, meaning mentioning myself in a command, or leave a link to the [support server](https://hunterbot.tk/support) of **Hunter Bot**, even if you modified every command you must give me credit!
 
-Note: if you're using less than 5 commands you **do not** need to give me credit!
+> Note: if you're using less than 5 commands you **do not** need to give me credit!
