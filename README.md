@@ -9,7 +9,7 @@ The official source for the Discord bot **[Hunter Bot#8590](https://discord.com/
 
 Firstly you must change the keys in [config.js](config.js), and replace with your bot's keys. Also dont forget to check all the files and change the texts. Change the message/channel IDs in bot.variables in [index.js](index.js), webhook IDs and tokens for vote rewards, authorization for the vote webhooks. In order for the vote webhooks to work **you must** set the URL to https://your-server-ip:port/votes OR if in glitch or repl.it use `https://URL-of-the-project/votes`, for authorization check the if staments for the custom authorization!
 
-If you'll like to use the stats posting, statcord.com or vote webhooks you can remove `/*` and `*/` to enabled them, remember to set up the keys in [cobfig.json](config.json)
+If you'll like to use the stats posting, statcord.com or vote webhooks you can remove `/*` and `*/` to enabled them, remember to set up the keys in [config.json](config.json) before enabling anything.
 
 You can change the sentences to what ever you want, or you can also edit the commands!
 
