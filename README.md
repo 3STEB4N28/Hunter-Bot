@@ -15,7 +15,7 @@ You can change the sentences to what ever you want, or you can also edit the com
 
 # Set Up Discord.js
 
-Firstly, you must change the keys in [Config.js](https://github.com/3STEB4N28/Hunter-Bot/blob/Discord.js/Config.js), and replace with your bot's keys. You can change any of te text that will be displayed when a error occurs. You can change the webhook IDs, Tokens by going to [/src/Utils/Util.js](https://github.com/3STEB4N28/Hunter-Bot/blob/Discord.js/src/Utils/Util.js). You can also check the event handler, and event files to change anything you'll like.
+Firstly, you must have some DIiscord.js knowledge, this is **NOT** designed for discord.js beginners since it contains advanced Discord.js functions/features. Secondly, change the keys in [Config.js](https://github.com/3STEB4N28/Hunter-Bot/blob/Discord.js/Config.js), and replace with your bot's API keys, and MongoDB URL. You can change any of te text that will be displayed when a error occurs. You can change the webhook IDs, Tokens by going to [/src/Utils/Util.js](https://github.com/3STEB4N28/Hunter-Bot/blob/Discord.js/src/Utils/Util.js). You can also check the event handler, and event files to change anything you'll like. When using the vote rewards, the main path will be `/webhook/votes`, the authorization will be your bot's client ID.bot list name, as a example, for top.gg the authorization will be `755094850113896639.top.gg`, DO NOT use this as it will act as a unknown request.
 
 # Giving Credits
 
