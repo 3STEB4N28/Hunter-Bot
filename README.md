@@ -3,7 +3,7 @@
 The official source for the Discord bot **[Hunter Bot#8590](https://discord.com/oauth2/authorize?client_id=755094850113896639&scope=bot&permissions=213249095)** made by 3STEB4N28!
 
 # First step
-To clone this repository in [Glitch](https://glitch.com), [Repl.it](https://replit.com) or any other host run `git clone https://github.com/3STEB4N28/Hunter-Bot` in shell, after that it should create a folder named "Hunter Bot", just take every single file/folder out of that directory. After that, just run `npm install` to install all the necessary packages.
+To clone this repository in [Glitch](https://glitch.com), [Repl.it](https://replit.com) or any other host run `git clone -b <branch, Aoi.js or Discord.js> https://github.com/3STEB4N28/Hunter-Bot` in shell, after that it should create a folder named "Hunter Bot", just take every single file/folder out of that directory. After that, just run `npm install` to install all the necessary packages.
 
 # Set Up Aoi.js
 
