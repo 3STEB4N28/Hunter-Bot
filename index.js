@@ -9,8 +9,8 @@ const Statcord = require("statcord.js");
     postMemStatistics: true,
     postNetworkStatistics: true,
 });*/
-const dbd = require("dbd.js-lite");
-const bot = new dbd.Bot({
+const aoi = require("aoi.js-light");
+const bot = new aoi.Bot({
 	sharding: false,
 	shardAmount: 2,
 	mobile: true,
@@ -252,7 +252,7 @@ bot.variables({
 	modstatus: "on",
 	welcstatus: "on",
 	ecologs: "Economy logs channel id here",
-    logschannel: "",
+	logschannel: "",
 	botfooter: "©2021 Hunter Bot Development Team",
 	
 	Money: 0,
@@ -279,10 +279,9 @@ bot.variables({
 	blacklistedmod: `${id}`,
 	blacklisteddate: "",
 	blacklistedsdate: "",
-    blacklistedUsers: 0,
-    blacklistedServers: 0,
-	acceptedRules: false,
-    devTeamMember: false,
+	blacklistedUsers: 0,
+	blacklistedServers: 0,
+	devTeamMember: false,
 	
 	joinmsg: "Just joined!",
 	joinc: "",
@@ -313,9 +312,9 @@ bot.loopCommand({
     code: `$log[Statistics updated on Hunter's Lounge!]
     $editMessage[$getVar[statsmsg];{title:$userTag[$clientid]'s Statistics}
     {description:Current statistics of the bot!}
-    {field:Current Version:\`v4.0.0\`:no}
-    {field:Next Version: \`v5.0.0\`:no}
-    {field:Current Language:\`DBD.js-lite v$packageVersion\`:no}
+    {field:Current Version:\`v1.0.0\`:no}
+    {field:Next Version: \`v2.0.0\`:no}
+    {field:Current Language:\`Aoi.js-light v$packageVersion\`:no}
     {field:Total Servers:\`$numberSeparator[$serverCount]\`:no}
     {field:Total Users:\`$numberSeparator[$allMembersCount]\`:no}
     {field:Total Channels:\`$numberSeparator[$allChannelsCount]\`:no}
@@ -330,4 +329,3 @@ bot.loopCommand({
 });
 
 client.login(config.token);
-;
