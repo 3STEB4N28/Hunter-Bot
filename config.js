@@ -21,5 +21,5 @@ module.exports = ({
 	sbl: "space-bot-list",
 	ac: "",
 	del: "discord-extreme-list",
-	port: /*Your server's port*/,
+	port: 3000/*Your server's port*/,
 });
