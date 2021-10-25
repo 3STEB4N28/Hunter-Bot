@@ -308,7 +308,7 @@ bot.status({
 });
 
 bot.loopCommand({
-    channel: "status channel id"
+    channel: "status channel id",
     code: `$log[Statistics updated on Hunter's Lounge!]
     $editMessage[$getVar[statsmsg];{title:$userTag[$clientid]'s Statistics}
     {description:Current statistics of the bot!}
