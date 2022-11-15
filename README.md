@@ -15,7 +15,7 @@ You can change the sentences to what ever you want, or you can also edit the com
 
 # Set Up Discord.js
 
-Firstly, you must have some DIiscord.js knowledge, this is **NOT** designed for discord.js beginners since it contains advanced Discord.js functions/features. Secondly, change the keys in [Config.js](https://github.com/3STEB4N28/Hunter-Bot/blob/Discord.js/Config.js), and replace with your bot's API keys, and MongoDB URL. You can change any of te text that will be displayed when a error occurs. You can change the webhook IDs, Tokens by going to [/src/Utils/Util.js](https://github.com/3STEB4N28/Hunter-Bot/blob/Discord.js/src/Utils/Util.js). You can also check the event handler, and event files to change anything you'll like.
+Firstly, you must have some DIiscord.js knowledge, this is **NOT** designed for discord.js beginners since it contains advanced Discord.js functions/features. Secondly, change the keys in [Config.js](https://github.com/3STEB4N28/Hunter-Bot/blob/Discord.js/Config.js), and replace with your bot's API keys, and MongoDB URL. You can change any of te text that will be displayed when a error occurs. You can change the webhook IDs, Tokens by going to [/src/Utils/Util.js](https://github.com/3STEB4N28/Hunter-Bot/blob/Discord.js/config.js). You can also check the event handler, and event files to change anything you'll like.
 
 # Branch Status
 
@@ -27,4 +27,4 @@ Firstly, you must have some DIiscord.js knowledge, this is **NOT** designed for 
 
  In order for you to use this repository, you must give credits to **[3STEB4N28](https://discord.com/users/701292425624420362)**, meaning mentioning myself in a command, or leave a link to the [support server](https://hunterbot.tk/support) of **Hunter Bot**, even if you modified every command you must give me credit!
 
-> Note: if you're using less than 5 commands from this command, you **do not** need to give me credit!
+> Note: if you're using less than 5 commands from this bot, you **do not** need to give me credit!
